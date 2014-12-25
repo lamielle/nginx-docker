@@ -1,7 +1,9 @@
 FROM progrium/busybox:latest
 MAINTAINER Alan LaMielle <alan.lamielle@gmail.com>
 
-RUN opkg-install nginx
-
-VOLUME ["/config"]
 EXPOSE 80 443
+VOLUME ["/data"]
+ENTRYPOINT ["nginx"]
+CMD ["-c /data/nginx.conf"]
+
+RUN opkg-install nginx

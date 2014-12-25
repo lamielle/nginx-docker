@@ -1,5 +1,5 @@
 FROM progrium/busybox:latest
-MAINTAINER Alan LaMielle <alan.lamielle@gmail.com>
+MAINTAINER Alan LaMielle <alan.lamielle+github@gmail.com>
 
 EXPOSE 80 443
 VOLUME ["/data"]
